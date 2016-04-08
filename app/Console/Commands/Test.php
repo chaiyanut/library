@@ -18,7 +18,7 @@ class Test extends Command {
 
     public function fire()
     {
-        $result = DB::select('SELECT users.* FROM users, borrows where date(date_add(borrows.created_at, interval 4 day)) = date(now()) and borrows.user_id = users.id;')->get();
+        $result = DB::select('SELECT users.* FROM users, borrows where date(date_add(borrows.created_at, interval 4 day)) = date(now()) and borrows.user_id = users.id;');
         foreach ($result as $user) {
 
             Mail::send('admin.email', ['user'=>$user], function ($message) use ($user) {
