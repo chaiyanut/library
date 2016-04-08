@@ -1,4 +1,5 @@
 <?php
+namespace App\Console\Commands;
 
 use Mail;
 use Illuminate\Console\Command;
@@ -18,7 +19,7 @@ class Test extends Command {
     {
 
         Mail::send('admin.email', [], function($message) {
-            $message->from('library.coe.psu@gmail.com', 'PSU PHUKET CoE Library System');
+            $message->from('library.coe.psu@gmail.com', "library");
             $message->to('ntossapo@gmail.com', 'Tossapon Nuanchuay')->subject('Test');
         });
 

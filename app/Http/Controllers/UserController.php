@@ -25,7 +25,7 @@ class UserController extends Controller
     private $curr_raw_time;
     private $curr_date;
     private $curr_date_time;
-    private $day = 60*60*24;
+    private $day = 86400;
 
     public function getTest() {
         Mail::send('admin.email', [], function($message) {

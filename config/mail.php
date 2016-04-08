@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => "CoE Library Staf", 'name' => 'Chaiyanut'],
+    'from' => ['address' => "library.coe.psu@gmail.com", 'name' => 'Chaiyanut'],
 
     /*
     |--------------------------------------------------------------------------
